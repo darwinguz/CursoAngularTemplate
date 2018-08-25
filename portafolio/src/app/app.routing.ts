@@ -3,10 +3,16 @@ import {RouterModule, Routes} from "@angular/router";
 import {PortafolioComponent} from "./pages/portafolio/portafolio.component";
 import {AboutComponent} from "./pages/about/about.component";
 import {ItemComponent} from "./pages/item/item.component";
+import {HomeComponent} from "./pages/home/home.component";
+import {NoEncontradoComponent} from "./pages/no-encontrado/no-encontrado.component";
 
 const APP_ROUTES: Routes = [
   {
-    path: '',
+    path: 'home',
+    component: HomeComponent
+  },
+  {
+    path: 'portafolio',
     component: PortafolioComponent
   },
   {
@@ -18,9 +24,18 @@ const APP_ROUTES: Routes = [
     component: ItemComponent
   },
   {
+    path: 'no-encontrado',
+    component: NoEncontradoComponent
+  },
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'home'
+  },
+  {
     path: '**',
     pathMatch: 'full',
-    redirectTo: ''
+    redirectTo: 'no-encontrado'
   }
 ];
 

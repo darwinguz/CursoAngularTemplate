@@ -8,6 +8,8 @@ import {PortafolioComponent} from './pages/portafolio/portafolio.component';
 import {AboutComponent} from './pages/about/about.component';
 import {ItemComponent} from './pages/item/item.component';
 import {AppRouting} from "./app.routing";
+import { HomeComponent } from './pages/home/home.component';
+import { NoEncontradoComponent } from './pages/no-encontrado/no-encontrado.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import {AppRouting} from "./app.routing";
     FooterComponent,
     PortafolioComponent,
     AboutComponent,
-    ItemComponent
+    ItemComponent,
+    HomeComponent,
+    NoEncontradoComponent
   ],
   imports: [
     BrowserModule,
