@@ -8,7 +8,7 @@ import {NoEncontradoComponent} from "./pages/no-encontrado/no-encontrado.compone
 
 const APP_ROUTES: Routes = [
   {
-    path: 'home',
+    path: '',
     component: HomeComponent
   },
   {
@@ -30,7 +30,7 @@ const APP_ROUTES: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'home'
+    redirectTo: ''
   },
   {
     path: '**',
