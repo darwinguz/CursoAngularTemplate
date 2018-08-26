@@ -11,6 +11,7 @@ import {HomeComponent} from './pages/home/home.component';
 import {NoEncontradoComponent} from './pages/no-encontrado/no-encontrado.component';
 import {HttpClientModule} from "@angular/common/http";
 import {AppRouting} from "./app.routing";
+import { LoadingComponent } from './components/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {AppRouting} from "./app.routing";
     AboutComponent,
     ItemComponent,
     HomeComponent,
-    NoEncontradoComponent
+    NoEncontradoComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
