@@ -11,7 +11,7 @@ export class InfoPaginaService {
   equipo: any[] = [];
 
   constructor(private _http: HttpClient) {
-    console.log('InfoPaginaService se inicializó...');
+    // console.log('InfoPaginaService se inicializó...');
     this.cargarInfo();
     this.cargarEquipo();
   }
@@ -20,7 +20,7 @@ export class InfoPaginaService {
     this._http.get('https://angulartemplate-c0ba8.firebaseio.com/equipo.json').subscribe(
       (value: any[]) => {
         this.equipo = value;
-        console.log(this.equipo);
+        //console.log(this.equipo);
       }
     );
   }

@@ -20,7 +20,7 @@ const APP_ROUTES: Routes = [
     component: AboutComponent
   },
   {
-    path: 'item',
+    path: 'item/:id',
     component: ItemComponent
   },
   {
