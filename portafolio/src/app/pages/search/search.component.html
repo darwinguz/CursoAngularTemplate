@@ -1,0 +1,12 @@
+<!--TODO probar esto con ngIf Else y arreglar el cargando que funcione con esta logica-->
+<app-loading *ngIf="_productosService.cargando"></app-loading>
+<div *ngIf="!_productosService.cargando" class="animated fadeIn ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
+  <a *ngFor="let item of _productosService.productosFiltrados" [routerLink]="['/item',item.cod]"
+     class="rk-item ae-masonry__item">
+    <img src="assets/img/productos/{{item.url}}" alt="">
+    <div class="item-meta">
+      <h2>{{item.titulo}}</h2>
+      <p>{{item.categoria}}</p>
+    </div>
+  </a>
+</div>

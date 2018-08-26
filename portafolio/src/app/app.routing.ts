@@ -5,6 +5,7 @@ import {AboutComponent} from "./pages/about/about.component";
 import {ItemComponent} from "./pages/item/item.component";
 import {HomeComponent} from "./pages/home/home.component";
 import {NoEncontradoComponent} from "./pages/no-encontrado/no-encontrado.component";
+import {SearchComponent} from "./pages/search/search.component";
 
 const APP_ROUTES: Routes = [
   {
@@ -22,6 +23,10 @@ const APP_ROUTES: Routes = [
   {
     path: 'item/:id',
     component: ItemComponent
+  },
+  {
+    path: 'search/:termino',
+    component: SearchComponent
   },
   {
     path: 'no-encontrado',
